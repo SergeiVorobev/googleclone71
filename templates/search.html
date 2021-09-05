@@ -178,13 +178,15 @@ max-width: 40%;
 <a href="#">+You</a>
 <a href="https://mail.google.com/mail/">Gmail</a>
 <a href="https://www.google.pl/imghp?hl">Images</a>
-<img src={% static 'img/Acc.png' %} />
+<img src="{% static 'img/Acc.png' %}" alt="..."/>
 <a href="#"><button class="signin">Sign In</button></a>
 </nav>
 </div>
 <div class="search">
 <div class="logo">
-<img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+    <a href="https://www.google.com">
+        <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+    </a>
 </div>
 <form method="POST" action="search">
         {% csrf_token %}
