@@ -174,30 +174,34 @@ max-width: 40%;
 {% load static %}
 
 <div class="top-toolbar">
-<nav>
-<a href="https://mail.google.com/mail/">Gmail</a>
-<a href="https://www.google.pl/imghp?hl">Images</a>
-<img src= "{% static 'img/Acc.png' %}" alt="..."/>
-<img src="https://dl.dropboxusercontent.com/u/25441638/1.5-google-clone/images/grid.png" />
-<a href="#"><button class="signin">Sign In</button></a>
-</nav>
+    <nav>
+    <a href="https://mail.google.com/mail/">Gmail</a>
+    <a href="https://www.google.pl/imghp?hl">Images</a>
+    <img src= "{% static 'img/Acc.png' %}" alt="..."/>
+    <a href="#"><button class="signin">Sign In</button></a>
+    </nav>
 </div>
+
 <div class="search">
-<div class="logo">
-        <a href="https://www.google.com">
-                <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
-        </a>
-</div>
-<form method="POST" action="search">
-        {% csrf_token %}
-<input class="search-bar" type="text" name="search" autofocus x-webkit-speech/>
-<div class="search-nav">
-<div class="search-button">
-<a href="#"><button type="submit">Google Search</button></a>
-</form>
-<a href="#"><button>I'm Feeling Lucky</button></a>
-</div>
-</div>
+    <div class="logo">
+            <a href="https://www.google.com">
+                    <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" />
+            </a>
+    </div>
+    <form method="POST" action="search">
+            {% csrf_token %}
+        <label>
+            <input class="search-bar" type="text" name="search" autofocus x-webkit-speech/>
+        </label>
+
+        <div class="search-nav">
+        <div class="search-button">
+            <a href="#"><button type="submit">Google Search</button></a>
+    </form>
+            <a href="#"><button>I'm Feeling Lucky</button></a>
+        </div>
+    </div>
+
 </div>
 <div class="footer">
 <footer class="bottom-toolbar">
